@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voice TV24 | সবার কথা, দেশের কণ্ঠ</title>
+<meta name="description" content="Voice TV24: নির্ভীক ও নিরপেক্ষ সংবাদ, ভিডিও ও বিশ্লেষণ।">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="chrome-top"></div>
+<main class="wrap" id="main">
+  <div id="setup"></div>
+  <div class="ticker" id="tickerBox" aria-label="শিরোনাম" hidden>
+    <b>শিরোনাম</b>
+    <div class="ticker-view"><div class="ticker-track" id="ticker"></div></div>
+  </div>
+  <div id="adTop"></div>
+  <section class="front" id="front" aria-label="প্রধান খবর" hidden></section>
+  <div class="empty-panel" id="emptyAll" hidden>
+    <h2>খবর আসছে শিগগিরই</h2>
+    <p>ততক্ষণ সোশ্যাল মিডিয়ায় আমাদের সাথে থাকুন।</p>
+  </div>
+  <div id="more" hidden>
+    <div class="sec-head"><h2 id="gridTitle">সর্বশেষ খবর</h2></div>
+    <div class="main">
+      <div>
+        <div class="grid" id="grid"></div>
+        <p class="empty" id="emptyCat" hidden>এই বিভাগে এখনো কোনো খবর নেই।</p>
+      </div>
+      <aside class="rail" id="rail" aria-label="সর্বশেষ">
+        <h2>সর্বশেষ</h2>
+        <ol id="latest"></ol>
+      </aside>
+    </div>
+  </div>
+</main>
+<section class="videos" id="videos" aria-label="ভিডিও" hidden>
+  <div class="wrap">
+    <div class="sec-head"><h2>ভিডিও রিপোর্ট</h2></div>
+    <p class="empty" id="noVideo" hidden>ভিডিও রিপোর্ট শিগগিরই আসছে।</p>
+    <div class="vgrid" id="vgrid"></div>
+    <a class="morebtn" id="fbAll" target="_blank" rel="noopener">ফেসবুক পেজে সব ভিডিও দেখুন</a>
+  </div>
+</section>
+<div id="chrome-bottom"></div>
+<script type="module" src="home.js"></script>
+</body>
+</html>
